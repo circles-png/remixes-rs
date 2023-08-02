@@ -1,0 +1,4 @@
+[toolchain]
+channel = "nightly-aarch64-apple-darwin"
+components = ["rust-src"]
+profile = "minimal"
