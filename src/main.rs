@@ -9,7 +9,7 @@ mod remixes;
 
 use arduino_hal::prelude::_void_ResultVoidExt;
 use core::panic::PanicInfo;
-use remixes::{button_three_seconds, button_toggle};
+use remixes::make_it_shine_original;
 
 #[panic_handler]
 fn panic(info: &PanicInfo) -> ! {
@@ -40,5 +40,5 @@ fn panic(info: &PanicInfo) -> ! {
 
 #[arduino_hal::entry]
 fn main() -> ! {
-    button_toggle()
+    make_it_shine_original()
 }
