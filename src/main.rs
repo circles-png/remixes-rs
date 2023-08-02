@@ -1,6 +1,7 @@
 #![no_std]
 #![no_main]
-#![feature(abi_avr_interrupt)]
+#![feature(abi_avr_interrupt, slice_flatten)]
+
 #[warn(clippy::nursery)]
 #[warn(clippy::pedantic)]
 #[allow(clippy::cast_possible_truncation)]
