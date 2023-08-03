@@ -101,5 +101,6 @@ pub fn make_it_shine_binary() -> ! {
                 pin.set_low();
             }
         }
+        delay_ms(1000);
     }
 }

@@ -10,7 +10,7 @@ mod remixes;
 
 use arduino_hal::prelude::_void_ResultVoidExt;
 use core::panic::PanicInfo;
-use remixes::make_it_shine_original;
+use remixes::make_it_shine_binary;
 
 #[panic_handler]
 fn panic(info: &PanicInfo) -> ! {
@@ -41,5 +41,5 @@ fn panic(info: &PanicInfo) -> ! {
 
 #[arduino_hal::entry]
 fn main() -> ! {
-    make_it_shine_original()
+    make_it_shine_binary()
 }
